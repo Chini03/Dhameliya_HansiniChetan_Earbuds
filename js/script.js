@@ -12,14 +12,14 @@
     {
       title: "Ergonomic Design",
       text: "Optimized for human performance, health, and well-being.",
-      img: "images/case - earbuds.jpg",
+      img: "images/fisheye.jpg",
       alt: "Earbuds Promo Poster"
       
     },
     {
       title: "Ultra-Fast Charging",
       text: "Charging your earbuds in 30 minutes or less with our hyper charging technology.",
-      img: "images/fisheye.jpg",
+      img: "images/case - earbuds.jpg",
       alt: "Earbuds Promo Poster"
       
     }
