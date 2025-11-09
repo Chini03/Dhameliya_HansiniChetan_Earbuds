@@ -63,7 +63,7 @@ model-viewer {
   width: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 30px;
 
@@ -82,7 +82,7 @@ model-viewer {
   }
 
   img {
-    width: 120px;
+    width: 300px;
     border-bottom: #333 3px solid;
     padding-bottom: 8px;
     margin-right: 8px;
@@ -129,6 +129,10 @@ model-viewer {
 
 @media screen and (min-width: 1200px) {
 
+  model-viewer {
+    height: 700px;
+  }
+
   .Hotspot {
     display: inline;
   }
@@ -169,7 +173,6 @@ model-viewer {
       font-size: 16px;
       margin-bottom: 5px;
       padding-bottom: 15px;
-      border-bottom: #333 3px solid;
     }
 
     img {
