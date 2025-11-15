@@ -5,6 +5,7 @@ model-viewer {
   height: 300px;
   background-color: #ffffff;
   margin: 0 auto;
+  border: .2em solid var(--color-white);
 }
 
 // Button
@@ -44,13 +45,19 @@ model-viewer {
 //   transform: translateY(-50%);
 // }
 
+.annotations-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .HotspotAnnotation{
   visibility: visible;
   background: var(--color-primary1);
   border-radius: 4px;
   // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   color: rgba(0, 0, 0, 0.8);
-  display: block;
   font-family: Futura, Helvetica Neue, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -60,11 +67,11 @@ model-viewer {
   padding: 0.5em 1em;
   position: static;
   top: 50%;
-  width: auto;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 30px;
 
   p {
@@ -77,14 +84,14 @@ model-viewer {
   h2 {
     font-size: 16px;
     margin-bottom: 5px;
-    padding-bottom: 15px;
+    // padding-bottom: 15px;
     
   }
 
   img {
-    width: 300px;
-    border-bottom: #333 3px solid;
-    padding-bottom: 8px;
+    width: 30%;
+    // border-bottom: #333 3px solid;
+    margin-bottom: 8px;
     margin-right: 8px;
   }
 
@@ -161,6 +168,8 @@ model-viewer {
   .HotspotAnnotation{
     visibility: hidden;
     position: absolute;
+    width: 20em;
+    align-items: center;
 
     p {
       color: #333;
@@ -172,7 +181,6 @@ model-viewer {
     h2 {
       font-size: 16px;
       margin-bottom: 5px;
-      padding-bottom: 15px;
     }
 
     img {
