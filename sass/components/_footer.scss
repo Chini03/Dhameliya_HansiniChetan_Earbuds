@@ -1,9 +1,13 @@
 #foot {
-    background-color: var(--color-primary1);
+    border-top: .2em solid var(--color-white);
     text-align: center;
     padding: 2em 0;
 
     .logoContainer {
         margin-bottom: 1.5em;
+
+        .footerNavLogo {
+            width: 11.25rem;
+        }
     }
 }

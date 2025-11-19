@@ -1,5 +1,12 @@
 .head {
-    background-color: var(--color-primary1);
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0;
+    z-index: 9999;
+    box-shadow: 0 6px 6px rgba(145, 144, 144, 0.3);
+    background-color: white;
+    border-bottom: .2em solid var(--color-white);
 
     .logoWrapper {
         display: flex;
@@ -48,7 +55,7 @@
     }
 
     #mobileMenu {
-        background-color: var(--color-primary1);
+        background-color: white;
         position: absolute;
         inset: 0;
         width: 100vw;
@@ -60,11 +67,12 @@
         transition: transform 0.5s ease-in-out;
 
         ul {
+            margin-top: 30vh;
             li {
                 text-align: center;
                 padding-bottom: 1em;
-                border-bottom: 0.0625em solid var(--color-gray75);
-                margin-bottom: 1em;
+                // border-bottom: 0.0625em solid var(--color-gray75);
+                margin-bottom: 2em;
             }
         }
         a {
@@ -76,6 +84,9 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            img {
+                margin: 2em 0 0 2em;
+            }
         }
     }
 
@@ -94,8 +105,11 @@
         ul {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-end;
             width: 37.5em;
+            li {
+                margin-left: 2em
+            }
         }
         a {
             color: var(--color-gray75);

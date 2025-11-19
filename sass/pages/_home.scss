@@ -1,0 +1,43 @@
+/* ___________________________________________
+
+       CSS Guide
+___________________________________________ */
+
+/*  
+    00. Banner Section
+    01. Model Section
+
+
+*/    
+
+/* ------------- Banner Section -------------*/
+
+.bannerAd {
+    img {
+        width: 100%;
+    
+    }
+}
+
+/* ------------- Model Section -------------*/
+
+#modelViewerWrapper {
+    text-align: center;
+    background-color: var(--color-white);
+    padding: 2em;
+
+    #specialPTop {
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 2.5em;
+        color: var(--color-black);
+        margin: .2em 0 .5em 0;
+    }
+}
+
+.model-container {
+    background-color: var(--color-white);
+    padding: 2em 0;
+}

@@ -6,20 +6,20 @@
     {
       title: "Comfortable Material",
       text: "Three pairs of ultra comfortable silicone tips are icluded.",
-      img: "images/CoolNoDoubt.jpg",
+      img: "images/ear-listen-solid-full.svg",
       alt: "Earbuds Promo Poster"
     },
     {
       title: "Ergonomic Design",
       text: "Optimized for human performance, health, and well-being.",
-      img: "images/fisheye.jpg",
+      img: "images/headphones-solid-full.svg",
       alt: "Earbuds Promo Poster"
       
     },
     {
       title: "Ultra-Fast Charging",
       text: "Charging your earbuds in 30 minutes or less with our hyper charging technology.",
-      img: "images/case - earbuds.jpg",
+      img: "images/gauge-simple-high-solid-full.svg",
       alt: "Earbuds Promo Poster"
       
     }
@@ -39,7 +39,7 @@
       // console.log(imageElement);
 
       // creates an h2 element
-      const titleElement = document.createElement('h2');
+      const titleElement = document.createElement('h3');
       titleElement.textContent = infoBox.title;
 
       
