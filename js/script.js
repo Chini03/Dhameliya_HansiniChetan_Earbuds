@@ -1,5 +1,18 @@
+// JS Index
+
+// 1. 3D Model Code
+// 2. 3D Model Responsive Design Code
+// 3. Mobile Menu
+// 4. Hero Scroll Animation Code
+
+
+
 (() => {
+
+  gsap.registerPlugin(ScrollTrigger);
   console.log("JS File Connected");
+
+  // 3D Model Code
     const hotspots = document.querySelectorAll(".Hotspot");
 
   const infoBoxes = [
@@ -81,7 +94,7 @@
     hotspot.addEventListener("mouseleave", hideInfo);
   });
 
-  // responsive design code
+  //3D Model Responsive Design Code
 function responsiveAnnotations () {
 
     const mobileAnnotationsWindow = document.querySelector(".annotations-mobile");
@@ -90,12 +103,6 @@ function responsiveAnnotations () {
     
     if(window.innerWidth < 1200) {
     
-
-    // infoBoxes.forEach((_, index) => {
-    //   const mobileAnnotaion = model-container.querySelector(`#hotspot-${index+1}`);
-
-    //   mobileAnnotationsWindow.appendChild(mobileAnnotaion);
-    // });
 
     annotations.forEach((annotation) => {
       mobileAnnotationsWindow.appendChild(annotation);
@@ -147,6 +154,59 @@ window.addEventListener("resize", responsiveAnnotations);
     closeMobileMenuBtn.addEventListener("click",toggleMobileMenu);
 })();
 
+
+// Hero Scroll Animation Code
+
+
+
+  const canvas = document.querySelector("#explode-view");
+  const context = canvas.getContext("2d");
+
+  canvas.width = 1920;
+  canvas.height = 1080;
+
+  // the amout of still frames you have
+  const frameCount = 384;
+
+  // array to hold our images
+  const images = [];
+
+  // object will hold the current frame
+  // we will use green sock to animate the frame property
+  const buds = {
+      frame: 0
+  }
  
+
+  for (let i = 0; i < frameCount; i++) {
+    const image = new Image();
+
+    image.src = `images/scrollAnimation_${(i).toString().padStart(5, '0')}.jpg`;
+    
+    images.push(image);
+
+  }
+
+  
+
+  gsap.to(buds, {
+    frame: frameCount,
+    snap: "frame",
+    scrollTrigger: {
+      trigger: "#explode-view",
+      pin: true,
+      scrub:1
+    },
+    onupdate: render
+  });
+
+  images[0].addEventListener("load", render);
+
+
+  function render() {
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.drawImage(images[buds.frame], 0, 0);
+  }
+  
 
 })();
