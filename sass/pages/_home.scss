@@ -6,6 +6,7 @@ ___________________________________________ */
 /*  
     00. Banner Section
     01. Model Section
+    02. Slider Section
 
 
 */    
@@ -40,4 +41,24 @@ ___________________________________________ */
 .model-container {
     background-color: var(--color-white);
     padding: 2em 0;
+}
+
+
+/* ------------- Slider Section -------------*/
+
+#xRaySlider {
+    padding: 2em;
+    text-align: center;
+    background-color: var(--color-white);
+
+    h2 {
+        font-size: 2.5em;
+        color: var(--color-black);
+        margin: .2em 0 .5em 0;
+    }
+}
+
+.sliderContainer {
+    width: 80%;
+    margin: 0 auto;
 }
