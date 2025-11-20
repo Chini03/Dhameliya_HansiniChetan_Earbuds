@@ -4,6 +4,7 @@
 // 2. 3D Model Responsive Design Code
 // 3. Mobile Menu
 // 4. Hero Scroll Animation Code
+// 5. Comparison Slider Code
 
 
 
@@ -214,7 +215,7 @@ window.addEventListener("resize", responsiveAnnotations);
   const slider = document.querySelector("#slider");
 
   function moveDivisor() {
-    divisor.style.width = `${slider.value}`
+    divisor.style.width = `${slider.value}%`;
   };
 
   function resetSlider() {
