@@ -168,8 +168,10 @@ window.addEventListener("resize", responsiveAnnotations);
   const canvas = document.querySelector("#explode-view");
   const context = canvas.getContext("2d");
 
-  canvas.width = 1920;
-  canvas.height = 1080;
+  canvas.width = innerWidth;
+  canvas.height = canvas.width / 1.5;
+  // canvas.width = 1920;
+  // canvas.height = 1080;
 
   // the amout of still frames you have
   const frameCount = 384;
@@ -211,7 +213,7 @@ window.addEventListener("resize", responsiveAnnotations);
 
   function render() {
     context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(images[buds.frame], 0, 0);
+    context.drawImage(images[buds.frame], 0, 0, canvas.width, canvas.height);
   }
   
 
