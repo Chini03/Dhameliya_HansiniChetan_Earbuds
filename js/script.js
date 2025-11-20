@@ -140,6 +140,8 @@ window.addEventListener("resize", responsiveAnnotations);
 (function() {
     const mobileMenuBtn = document.querySelector(".mobileIcon");
     const closeMobileMenuBtn = document.querySelector("#mobileMenuCloseBtn");
+    const navItems = document.querySelectorAll("#mobileMenu ul li a");
+    // console.log(navItems);
 
     function toggleMobileMenu() {
         const mobileMenu = document.querySelector("#mobileMenu");
@@ -153,6 +155,9 @@ window.addEventListener("resize", responsiveAnnotations);
 
     mobileMenuBtn.addEventListener("click",toggleMobileMenu);
     closeMobileMenuBtn.addEventListener("click",toggleMobileMenu);
+    navItems.forEach((navItem) => {
+      navItem.addEventListener("click", toggleMobileMenu);
+    });
 })();
 
 
