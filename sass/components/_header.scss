@@ -15,7 +15,18 @@
     }
 
     .navLogo {
-        width: 11.25rem;
+        width: 5.25rem;
+    }
+
+    @media  screen and (min-width: 48em) {
+        .navLogo {
+            width: 11.25rem;
+        }
+    }
+    @media  screen and (min-width: 75em) {
+        .navLogo {
+            width: 11.25rem;
+        }
     }
 
     #mobileMenuCloseBtn {
